@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Cameronet DMS</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/cameronet.css"/>
+    <link rel="stylesheet" href="css/drop.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Rakkas|Slabo+27px" rel="stylesheet">
+    <!--link rel="stylesheet" href="dist/themes/default-dark/style.css"-->
+    <link rel="stylesheet" href="dist/themes/default/style.css">
+    <link rel="stylesheet" href="css/folder.css">
+</head>
+<body id="page_index">
+
+    <div id="main-content-index">
+
+        <!-------------------------------- SECOND MODAL UPLOAD ------------------------------------------------------------------->
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="second_upload_modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Dokument Hochladen</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="description_document form-horizontal" method="post">
+                            <!--div class="form-group">
+                                <label class="control-label col-sm-2" for="autor_id_2">Autor :</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Autor" id="autor_id_2" name="autor_2">
+                                </div>
+                            </div-->
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="doc_autor_id">Autor :</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="selected_user" id="selected_user_2">Ausw&auml;hlen</span>&nbsp;<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu drop-cam-users">
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                        <input type="text" class="form-control" placeholder="Autor" id="autor_id_2" name="autor_2_upload" disabled>
+                                    </div><!-- /input-group -->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="doc_version_2">Version :</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Version" id="doc_version_2" name="version_2">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Datum :</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Datum" id="doc_date_2" name="date_2" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Kategorie:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Kategorie" id="doc_category_2" name="category_2">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="doc_description">Beschreibung:</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="3" id="doc_description_2" name="description_2"></textarea>
+                                </div>
+                            </div>
+                            <div method="post"
+                                 enctype="multipart/form-data"
+                                 class="dropzone"
+                                 id="cameronet_drop_2">
+                            </div>
+                            <!--hr>
+                            <button type="submit" class="btn btn-lg btn-block" style="background-color: #333333;color:white;" id="submit_form">&Uuml;bernehmen</button-->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!--------------------------------/// MODAL UPLOAD ---------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------- MODAL UPLOAD ------------------------------------------------------------------->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="upload_modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Dokument Hochladen</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="description_document form-horizontal" method="post">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="autor_id">Autor :</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Autor" id="autor_id" name="autor">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="doc_version">Version :</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Version" id="doc_version" name="version">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Datum :</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Datum" id="doc_date" name="date" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Kategorie:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Kategorie" id="doc_category" name="category">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="doc_description">Beschreibung:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="doc_description" name="description"></textarea>
+                            </div>
+                        </div>
+                        <div method="post"
+                              enctype="multipart/form-data"
+                              class="dropzone"
+                              id="cameronet_drop">
+                        </div>
+                        <!--hr>
+                        <button type="submit" class="btn btn-lg btn-block" style="background-color: #333333;color:white;" id="submit_form">&Uuml;bernehmen</button-->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--------------------------------/// MODAL UPLOAD ---------------------------------------------------------------->
+
+
+
+
+
+
+    <!-------------------------------- MODAL UPLOAD ------------------------------------------------------------------->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="container_docs">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Dokument Erstellen</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="description_document form-horizontal" method="post">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="doc_name">Dok.Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Dokumentname" id="doc_name" name="doc_name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="doc_autor_id">Autor :</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="selected_user" id="selected_user">Ausw&auml;hlen</span>&nbsp;<span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu drop-cam-users">
+                                        </ul>
+                                    </div><!-- /btn-group -->
+                                    <input type="text" class="form-control" placeholder="Autor" id="doc_autor_id" name="autor" disabled>
+                                </div><!-- /input-group -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Datum :</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Datum" id="doc2_date" name="date" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Kategorie:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Kategorie" id="doc2_category" name="category">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="doc2_description">Beschreibung:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="doc2_description" name="description"></textarea>
+                            </div>
+                        </div>
+                        <!--hr>
+                        <button type="submit" class="btn btn-lg btn-block" style="background-color: #333333;color:white;" id="submit_form">&Uuml;bernehmen</button-->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-block" style="background-color: #333333;color:white;" id="submit_doc_container">&Uuml;bernehmen</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--------------------------------/// MODAL UPLOAD ---------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="file_permission">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Dokument Freigeben</h4>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-block" style="background-color: #333333;color:white;" id="submit_file_permission">&Uuml;bernehmen</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <!--class="dropzone"-->
+
+            <div class="container-fluid" data-role="header" id="header" data-position="fixed">
+                <a href="index.html"><img src="img/cameronet.png" class="cameronet-logo"></a>
+            </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-lg-4 without_padd">
+                    <div class="jsTreePlace">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <!--button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button-->
+                                <div class="search_icon"></div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Suchen" name="jstree4_q" id ="jstree4_q">
+                        </div>
+                        <!--Here will be shown the Folders Structure-->
+                        <div class="jstree_folders"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-lg-8 without_padd">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <!--button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button-->
+                            <div class="search_icon"></div>
+                        </div>
+                        <input type="text" class="search form-control" placeholder="Suchen" name="srch-term" id="srch-term">
+                    </div>
+
+                    <table class="table table-hover table-bordered results for_files"></table>
+
+                    <table class="table table-hover table-bordered results for_containers"></table>
+
+                    <div class="table table-hover table-bordered results for_test">
+                        <div class="folder">
+                            <div class="back"></div>
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="cover"></div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+<!--div class="abstand"></div>
+<div class="abstand"></div-->
+<div class="footer">
+    <!--div class="container-fluid" id="footer_id"></div-->
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/drop.js"></script>
+<script src="js/core.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/storage.js"></script>
+<script src="dist/jstree.js"></script>
+<script src="js/forFiles.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

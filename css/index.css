@@ -1,0 +1,150 @@
+body {
+	background-color: #000 !important;
+	color: #FFF !important;
+}
+.component6 {
+	border: solid 1px #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.component5 {
+	border: solid 1px #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.component4 {
+	border: solid 1px #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.component2 {
+	border: solid 1px #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.component3 {
+	border: solid 1px #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.component {
+	border: solid 1px #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.header {
+	border: solid 1px #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #404040;
+}
+.clickable:hover {
+	background-color: #FEFEFE !important;
+	color: #000 !important;
+}
+.clickable {
+	cursor : hand;
+}
+.container {
+	background-color: #000 !important;
+}
+.control-label{
+    text-align:left !important;
+}
+.alerts_cam{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:5em;
+}
+.not_enough {
+	background-color : red;
+}
+.alert{
+    height:5em !important;
+}
+.glyphicon-home-back {
+    	padding:0.4em;
+    	font-size:30px;
+	float:left;
+	color:#fff;
+}
+
+.glyphicon-home-footer {
+	padding:0.4em;
+	font-size:30px;
+	float:right;
+	color:#fff;
+}
+
+@media screen and (min-width: 768px) {
+	#footer_buildings {
+		z-index: 5;
+		position: fixed;
+		bottom: 0;
+		height: 60px;
+		border-top: 1px solid #FFF;
+		background-color: #000;
+		width: 750px !important;
+		left: calc((100% - 750px) / 2) !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#footer_buildings {
+		z-index: 5;
+		position: fixed;
+		bottom: 0;
+		height: 60px;
+		border-top: 1px solid #FFF;
+		background-color: #000;
+		width: 970px !important;
+		left: calc((100% - 970px) / 2) !important;
+	}
+}
+
+/***********/
+.tabs {
+  list-style:none;
+  font-family:'Trebuchet MS';
+  font-size:30px;
+  text-align:center;
+  margin-top:5px;
+  background-color:white;
+  border-bottom-left-radius:25px;
+  border-bottom-right-radius:25px;
+  border-top:2px solid #ff0000;
+  }
+
+li {
+  position:relative;
+  display:inline;
+}
+
+li .links {
+  text-decoration:none;
+  color:#333;
+  display:inline-block;
+  padding:10px;
+}
+
+.tab_span {
+  display:block;
+  width:calc(100% - 23px);
+  height:4px;
+  background:#0088CC;
+  position:absolute;
+  left:10px;
+  bottom:-10px;
+}
+
+li a:hover {
+ 	color:#0088CC;
+}
+
+.float_left{
+    float:left;
+}
+.float_right{
+    float:right;
+}

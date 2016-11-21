@@ -1,0 +1,116 @@
+.folder {
+    position: relative;
+    perspective: 1500px;
+    margin: 100px auto;
+    width: 990px;
+    text-align: center;
+}
+.folder:before {
+    content: "";
+    position: absolute;
+    bottom: 229px;
+    box-shadow: 0px 0px 28px 15px rgba(0,0,0,.7);
+    left: 0;
+    right: 0;
+    margin: 0 18em;
+}
+.folder:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    box-shadow: 0px 0px 15px 10px rgba(0,0,0,.7);
+    left: 0;
+    right: 0;
+    margin: 0 16em;
+}
+
+.folder .back {
+    width: 500px;
+    height: 320px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: inset 3px -5px 10px -5px black;
+    position: relative;
+    margin: 0 auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb8b0f+0,df9e22+21,af6e03+99 */
+    background: #cb8b0f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cb8b0f 0%, #df9e22 21%, #af6e03 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb8b0f), color-stop(21%,#df9e22), color-stop(99%,#af6e03)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cb8b0f 0%,#df9e22 21%,#af6e03 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cb8b0f 0%,#df9e22 21%,#af6e03 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cb8b0f 0%,#df9e22 21%,#af6e03 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  #cb8b0f 0%,#df9e22 21%,#af6e03 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb8b0f', endColorstr='#af6e03',GradientType=0 ); /* IE6-9 */
+
+}
+
+.folder .cover {
+    width: 500px;
+    height: 320px;
+    border-radius: 20px 0px 20px 20px;
+    box-shadow: inset 3px -5px 10px -5px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0 auto;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcba2b+0,df9e22+70,cb8b0f+100 */
+    background: #fcba2b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcba2b 0%, #df9e22 70%, #cb8b0f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcba2b), color-stop(70%,#df9e22), color-stop(100%,#cb8b0f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcba2b 0%,#df9e22 70%,#cb8b0f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcba2b 0%,#df9e22 70%,#cb8b0f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcba2b 0%,#df9e22 70%,#cb8b0f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcba2b 0%,#df9e22 70%,#cb8b0f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcba2b', endColorstr='#cb8b0f',GradientType=0 ); /* IE6-9 */
+
+    transform-origin: 0 108%;
+    transform: rotateX(0deg);
+    animation: folderUnfold 1.25s ease 0s forwards;
+}
+.folder .cover:after {
+    position: absolute;
+    content: "";
+    width: 145px;
+    height: 30px;
+    border-radius: 20px 20px 0 0;
+    background: #fcba2b;
+    top: -30px;
+    right: 0;
+    border: 0;
+}
+
+.paper {
+    background: #fff;
+    height: 100px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,.7);
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 260px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: folderPaperJump .75s ease .75s forwards;
+}
+.paper + .paper {
+    margin: 8px 270px 0 255px;
+    animation: folderPaperJump .95s ease 1s forwards;
+}
+.paper + .paper + .paper {
+    margin: 16px 255px 0 270px;
+    animation: folderPaperJump .75s ease 1.25s forwards;
+}
+
+@keyframes folderUnfold {
+      0% { transform: rotateX(0deg); }
+    100% { transform: rotateX(-30deg); }
+}
+@keyframes folderPaperJump {
+    0% { transform: translateY(100px); opacity: 0; }
+    25% { transform: translateY(100px); opacity: 1; }
+    75% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
